@@ -1,0 +1,766 @@
+<robot name="avatar_yasmin">
+
+<link name="root"/>
+
+<link name="pelvis">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/pelvis.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="spine_01">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/spine_01.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="spine_02">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/spine_02.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="spine_03">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/spine_03.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="neck_01">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/neck_01.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="head">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/head.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="eye_l">
+  <!-- visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/eye_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual -->
+</link>
+
+<link name="eye_r">
+  <!-- visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/eye_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual -->
+</link>
+
+<link name="clavicle_l">
+  <!-- visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/clavicle_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual -->
+</link>
+
+<link name="upperarm_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/upperarm_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="lowerarm_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/lowerarm_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="hand_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/hand_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="thumb_01_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/thumb_01_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="thumb_02_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/thumb_02_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="thumb_03_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/thumb_03_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+
+<link name="index_01_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/index_01_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="index_02_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/index_02_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="index_03_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/index_03_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="middle_01_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/middle_01_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="middle_02_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/middle_02_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="middle_03_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/middle_03_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="ring_01_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/ring_01_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="ring_02_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/ring_02_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="ring_03_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/ring_03_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+
+<link name="pinky_01_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/pinky_01_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="pinky_02_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/pinky_02_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="pinky_03_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/pinky_03_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="clavicle_r">
+  <!-- visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/clavicle_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual -->
+</link>
+
+<link name="upperarm_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/upperarm_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="lowerarm_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/lowerarm_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="hand_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/hand_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="thumb_01_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/thumb_01_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="thumb_02_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/thumb_02_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="thumb_03_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/thumb_03_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="index_01_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/index_01_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="index_02_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/index_02_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="index_03_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/index_03_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="middle_01_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/middle_01_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="middle_02_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/middle_02_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="middle_03_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/middle_03_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="ring_01_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/ring_01_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="ring_02_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/ring_02_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="ring_03_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/ring_03_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="pinky_01_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/pinky_01_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="pinky_02_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/pinky_02_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="pinky_03_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/pinky_03_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="thigh_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/thigh_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="calf_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/calf_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="foot_l">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/foot_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="ball_l">
+  <!-- visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/ball_l.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual -->
+</link>
+
+<link name="thigh_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/thigh_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="calf_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/calf_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="foot_r">
+  <visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/foot_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="ball_r">
+  <!-- visual>
+    <geometry>
+      <mesh filename="package://avatar_description/avatar/meshes/yasmin/ball_r.dae" scale="0.01 0.01 0.01"/>
+    </geometry>
+  </visual -->
+</link>
+
+
+<joint name="root_to_pelvis" type="fixed">
+  <parent link="root"/>
+  <child link="pelvis"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="pelvis_to_spine_01" type="fixed">
+  <parent link="pelvis"/>
+  <child link="spine_01"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="spine_01_to_spine_02" type="fixed">
+  <parent link="spine_01"/>
+  <child link="spine_02"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="spine_02_to_spine_03" type="fixed">
+  <parent link="spine_02"/>
+  <child link="spine_03"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="spine_03_to_neck_01" type="fixed">
+  <parent link="spine_03"/>
+  <child link="neck_01"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="neck_01_to_head" type="fixed">
+  <parent link="neck_01"/>
+  <child link="head"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="head_to_eye_l" type="fixed">
+  <parent link="head"/>
+  <child link="eye_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="head_to_eye_r" type="fixed">
+  <parent link="head"/>
+  <child link="eye_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="spine_03_to_clavicle_l" type="fixed">
+  <parent link="spine_03"/>
+  <child link="clavicle_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="clavicle_l_to_upperarm_l" type="fixed">
+  <parent link="clavicle_l"/>
+  <child link="upperarm_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="upperarm_l_to_lowerarm_l" type="fixed">
+  <parent link="upperarm_l"/>
+  <child link="lowerarm_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="lowerarm_l_to_hand_l" type="fixed">
+  <parent link="lowerarm_l"/>
+  <child link="hand_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="hand_l_to_thumb_01_l" type="fixed">
+  <parent link="hand_l"/>
+  <child link="thumb_01_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="thumb_01_l_to_thumb_02_l" type="fixed">
+  <parent link="thumb_01_l"/>
+  <child link="thumb_02_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="thumb_02_l_to_thumb_03_l" type="fixed">
+  <parent link="thumb_02_l"/>
+  <child link="thumb_03_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="hand_l_to_index_01_l" type="fixed">
+  <parent link="hand_l"/>
+  <child link="index_01_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="index_01_l_to_index_02_l" type="fixed">
+  <parent link="index_01_l"/>
+  <child link="index_02_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="index_02_l_to_index_03_l" type="fixed">
+  <parent link="index_02_l"/>
+  <child link="index_03_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="hand_l_to_middle_01_l" type="fixed">
+  <parent link="hand_l"/>
+  <child link="middle_01_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="middle_01_l_to_middle_02_l" type="fixed">
+  <parent link="middle_01_l"/>
+  <child link="middle_02_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="middle_02_l_to_middle_03_l" type="fixed">
+  <parent link="middle_02_l"/>
+  <child link="middle_03_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="hand_l_to_ring_01_l" type="fixed">
+  <parent link="hand_l"/>
+  <child link="ring_01_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="ring_01_l_to_ring_02_l" type="fixed">
+  <parent link="ring_01_l"/>
+  <child link="ring_02_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="ring_02_l_to_ring_03_l" type="fixed">
+  <parent link="ring_02_l"/>
+  <child link="ring_03_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="hand_l_to_pinky_01_l" type="fixed">
+  <parent link="hand_l"/>
+  <child link="pinky_01_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="pinky_01_l_to_pinky_02_l" type="fixed">
+  <parent link="pinky_01_l"/>
+  <child link="pinky_02_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="pinky_02_l_to_pinky_03_l" type="fixed">
+  <parent link="pinky_02_l"/>
+  <child link="pinky_03_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="spine_03_to_clavicle_r" type="fixed">
+  <parent link="spine_03"/>
+  <child link="clavicle_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="clavicle_r_to_upperarm_r" type="fixed">
+  <parent link="clavicle_r"/>
+  <child link="upperarm_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="upperarm_r_to_lowerarm_r" type="fixed">
+  <parent link="upperarm_r"/>
+  <child link="lowerarm_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="lowerarm_r_to_hand_r" type="fixed">
+  <parent link="lowerarm_r"/>
+  <child link="hand_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="hand_r_to_thumb_01_r" type="fixed">
+  <parent link="hand_r"/>
+  <child link="thumb_01_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="thumb_01_r_to_thumb_02_r" type="fixed">
+  <parent link="thumb_01_r"/>
+  <child link="thumb_02_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="thumb_02_r_to_thumb_03_r" type="fixed">
+  <parent link="thumb_02_r"/>
+  <child link="thumb_03_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="hand_r_to_index_01_r" type="fixed">
+  <parent link="hand_r"/>
+  <child link="index_01_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="index_01_r_to_index_02_r" type="fixed">
+  <parent link="index_01_r"/>
+  <child link="index_02_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="index_02_r_to_index_03_r" type="fixed">
+  <parent link="index_02_r"/>
+  <child link="index_03_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="hand_r_to_middle_01_r" type="fixed">
+  <parent link="hand_r"/>
+  <child link="middle_01_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="middle_01_r_to_middle_02_r" type="fixed">
+  <parent link="middle_01_r"/>
+  <child link="middle_02_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="middle_02_r_to_middle_03_r" type="fixed">
+  <parent link="middle_02_r"/>
+  <child link="middle_03_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="hand_r_to_ring_01_r" type="fixed">
+  <parent link="hand_r"/>
+  <child link="ring_01_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="ring_01_r_to_ring_02_r" type="fixed">
+  <parent link="ring_01_r"/>
+  <child link="ring_02_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="ring_02_r_to_ring_03_r" type="fixed">
+  <parent link="ring_02_r"/>
+  <child link="ring_03_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="hand_r_to_pinky_01_r" type="fixed">
+  <parent link="hand_r"/>
+  <child link="pinky_01_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="pinky_01_r_to_pinky_02_r" type="fixed">
+  <parent link="pinky_01_r"/>
+  <child link="pinky_02_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="pinky_02_r_to_pinky_03_r" type="fixed">
+  <parent link="pinky_02_r"/>
+  <child link="pinky_03_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="pelvis_to_thigh_l" type="fixed">
+  <parent link="pelvis"/>
+  <child link="thigh_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="thigh_l_to_calf_l" type="fixed">
+  <parent link="thigh_l"/>
+  <child link="calf_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="calf_l_to_foot_l" type="fixed">
+  <parent link="calf_l"/>
+  <child link="foot_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="foot_l_to_ball_l" type="fixed">
+  <parent link="foot_l"/>
+  <child link="ball_l"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="pelvis_to_thigh_r" type="fixed">
+  <parent link="pelvis"/>
+  <child link="thigh_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="thigh_r_to_calf_r" type="fixed">
+  <parent link="thigh_r"/>
+  <child link="calf_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="calf_r_to_foot_r" type="fixed">
+  <parent link="calf_r"/>
+  <child link="foot_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+<joint name="foot_r_to_ball_r" type="fixed">
+  <parent link="foot_r"/>
+  <child link="ball_r"/>
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+</robot>
+
+
