@@ -54,7 +54,8 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/avatar_yasmin.owl#avatar_yasmin_1">
         <rdf:type rdf:resource="http://knowrob.org/kb/avatar_yasmin.owl#avatar_yasmin"/>
-        <urdf:hasURDFName>pelvis</urdf:hasURDFName>
+        <urdf:hasURDFName>root</urdf:hasURDFName>
+        <dul:hasComponent rdf:resource="http://knowrob.org/kb/avatar_yasmin.owl#avatar_yasmin_pelvis"/>
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/avatar_yasmin.owl#avatar_yasmin_spine"/>
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/avatar_yasmin.owl#avatar_yasmin_leg_l"/>
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/avatar_yasmin.owl#avatar_yasmin_leg_r"/>
@@ -63,6 +64,12 @@
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/avatar_yasmin.owl#avatar_yasmin_hand_l"/>
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/avatar_yasmin.owl#avatar_yasmin_hand_r"/>
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/avatar_yasmin.owl#avatar_yasmin_head"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/avatar_yasmin.owl#avatar_yasmin_pelvis">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">root</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pelvis</urdf:hasEndLinkName>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/avatar_yasmin.owl#avatar_yasmin_spine">
