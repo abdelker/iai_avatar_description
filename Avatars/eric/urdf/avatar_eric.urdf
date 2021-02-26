@@ -6,7 +6,7 @@
 <link name="hip">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/hip.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/hip.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -14,7 +14,7 @@
 <link name="spine_01">
   <!-- visual>
     <geometry>
-      < mesh filename="package://iai_avatar_description/Avatars/eric/meshes/spine_01.dae" scale="0.1 0.1 0.1"/>
+      < mesh filename="package://iai_avatar_description/Avatars/eric/meshes/spine_01.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -22,7 +22,7 @@
 <link name="spine_02">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/spine_02.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/spine_02.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -30,7 +30,7 @@
 <link name="spine_03">
   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/spine.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/spine.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual>
 </link>
@@ -38,7 +38,7 @@
 <link name="neck">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/neck.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/neck.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -46,7 +46,7 @@
 <link name="head">
   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/head.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/head.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual>
 </link>
@@ -56,7 +56,7 @@
 <link name="jaw">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/jaw.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/jaw.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -66,7 +66,7 @@
 <link name="eye_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/eye_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/eye_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -76,7 +76,7 @@
 <link name="eye_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/eye_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/eye_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -89,7 +89,7 @@
 <link name="upperarm_l">
  <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/arm_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/arm_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual>
 </link>
@@ -97,7 +97,7 @@
 <link name="lowerarm_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/lowerarm_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/lowerarm_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -105,7 +105,7 @@
 <link name="hand_l">
   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/hand_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/hand_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual>
 </link>
@@ -113,7 +113,7 @@
 <link name="thumb_01_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/thumb_01_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/thumb_01_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -121,7 +121,7 @@
 <link name="thumb_02_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/thumb_02_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/thumb_02_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -129,7 +129,7 @@
 <link name="thumb_03_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/thumb_03_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/thumb_03_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -139,7 +139,7 @@
 <link name="index_01_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/index_01_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/index_01_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -147,7 +147,7 @@
 <link name="index_02_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/index_02_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/index_02_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -155,7 +155,7 @@
 <link name="index_03_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/index_03_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/index_03_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -165,7 +165,7 @@
 <link name="middle_01_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/middle_01_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/middle_01_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -173,7 +173,7 @@
 <link name="middle_02_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/middle_02_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/middle_02_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -181,7 +181,7 @@
 <link name="middle_03_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/middle_03_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/middle_03_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -191,7 +191,7 @@
 <link name="ring_01_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ring_01_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ring_01_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -199,7 +199,7 @@
 <link name="ring_02_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ring_02_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ring_02_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -207,7 +207,7 @@
 <link name="ring_03_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ring_03_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ring_03_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -217,7 +217,7 @@
 <link name="pinky_01_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/pinky_01_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/pinky_01_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -225,7 +225,7 @@
 <link name="pinky_02_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/pinky_02_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/pinky_02_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -233,7 +233,7 @@
 <link name="pinky_03_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/pinky_03_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/pinky_03_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -250,7 +250,7 @@
 <link name="upperarm_r">
   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/arm_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/arm_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual>
 </link>
@@ -258,7 +258,7 @@
 <link name="lowerarm_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/lowerarm_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/lowerarm_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -266,7 +266,7 @@
 <link name="hand_r">
   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/hand_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/hand_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual>
 </link>
@@ -274,7 +274,7 @@
 <link name="thumb_01_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/thumb_01_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/thumb_01_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -282,7 +282,7 @@
 <link name="thumb_02_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/thumb_02_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/thumb_02_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -290,7 +290,7 @@
 <link name="thumb_03_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/thumb_03_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/thumb_03_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -300,7 +300,7 @@
 <link name="index_01_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/index_01_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/index_01_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -308,7 +308,7 @@
 <link name="index_02_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/index_02_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/index_02_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -316,7 +316,7 @@
 <link name="index_03_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/index_03_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/index_03_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -326,7 +326,7 @@
 <link name="middle_01_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/middle_01_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/middle_01_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -334,7 +334,7 @@
 <link name="middle_02_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/middle_02_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/middle_02_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -342,7 +342,7 @@
 <link name="middle_03_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/middle_03_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/middle_03_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -352,7 +352,7 @@
 <link name="ring_01_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ring_01_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ring_01_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -360,7 +360,7 @@
 <link name="ring_02_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ring_02_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ring_02_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -368,7 +368,7 @@
 <link name="ring_03_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ring_03_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ring_03_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -378,7 +378,7 @@
 <link name="pinky_01_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/pinky_01_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/pinky_01_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -386,7 +386,7 @@
 <link name="pinky_02_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/pinky_02_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/pinky_02_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -394,7 +394,7 @@
 <link name="pinky_03_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/pinky_03_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/pinky_03_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -408,7 +408,7 @@
 <link name="upperleg_l">
   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/leg_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/leg_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual>
 </link>
@@ -416,7 +416,7 @@
 <link name="lowerleg_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/lowerleg_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/lowerleg_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -424,7 +424,7 @@
 <link name="foot_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/foot_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/foot_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -432,7 +432,7 @@
 <link name="ball_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ball_l.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ball_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -446,7 +446,7 @@
 <link name="upperleg_r">
   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/leg_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/leg_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual>
 </link>
@@ -454,7 +454,7 @@
 <link name="lowerleg_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/lowerleg_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/lowerleg_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -462,7 +462,7 @@
 <link name="foot_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/foot_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/foot_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -470,7 +470,7 @@
 <link name="ball_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ball_r.dae" scale="0.1 0.1 0.1"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/ball_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>

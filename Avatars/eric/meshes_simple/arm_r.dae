@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.79.0</authoring_tool>
     </contributor>
-    <created>2021-02-24T09:12:44</created>
-    <modified>2021-02-24T09:12:44</modified>
+    <created>2021-02-26T11:20:53</created>
+    <modified>2021-02-26T11:20:53</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -117,7 +117,7 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="arm_r" name="arm_r" type="NODE">
-        <matrix sid="transform">0.1 0 0 0 0 -4.37114e-9 -0.1 0 0 0.1 -4.37114e-9 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-10 0 0.01 0 0 0.01 0 0 -0.01 0 -4.37114e-10 0 0 0 0 1</matrix>
         <instance_geometry url="#Untitled_003-mesh" name="arm_r">
           <bind_material>
             <technique_common>
