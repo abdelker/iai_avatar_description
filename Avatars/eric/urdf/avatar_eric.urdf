@@ -3,10 +3,10 @@
 <link name="root">
 </link>
 
-<link name="hip">
+<link name="pelvis">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/hip.dae" scale="0.01 0.01 0.01"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/pelvis.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -35,10 +35,10 @@
   </visual>
 </link>
 
-<link name="neck">
+<link name="neck_01">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/neck.dae" scale="0.01 0.01 0.01"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/neck_01.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -83,7 +83,7 @@
 
 <link name="eye_end_r"/>
 
-<link name="shoulder_l"/>
+<link name="clavicle_l"/>
 
 
 <link name="upperarm_l">
@@ -244,7 +244,7 @@
 
 <link name="upperarm_twist_l"/>
 
-<link name="shoulder_r"/>
+<link name="clavicle_r"/>
 
 
 <link name="upperarm_r">
@@ -405,7 +405,7 @@
 
 <link name="upperarm_twist_r"/>
 
-<link name="upperleg_l">
+<link name="thigh_l">
   <visual>
     <geometry>
       <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/leg_l.dae" scale="0.01 0.01 0.01"/>
@@ -413,10 +413,10 @@
   </visual>
 </link>
 
-<link name="lowerleg_l">
+<link name="calf_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/lowerleg_l.dae" scale="0.01 0.01 0.01"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/calf_l.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -439,11 +439,11 @@
 
 <link name="foot_end_l"/>
 
-<link name="lowerleg_twist_l"/>
+<link name="calf_twist_l"/>
 
-<link name="upperleg_twist_l"/>
+<link name="thigh_twist_l"/>
 
-<link name="upperleg_r">
+<link name="thigh_r">
   <visual>
     <geometry>
       <mesh filename="package://iai_avatar_description/Avatars/eric/meshes_simple/leg_r.dae" scale="0.01 0.01 0.01"/>
@@ -451,10 +451,10 @@
   </visual>
 </link>
 
-<link name="lowerleg_r">
+<link name="calf_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/lowerleg_r.dae" scale="0.01 0.01 0.01"/>
+      <mesh filename="package://iai_avatar_description/Avatars/eric/meshes/calf_r.dae" scale="0.01 0.01 0.01"/>
     </geometry>
   </visual -->
 </link>
@@ -477,9 +477,9 @@
 
 <link name="foot_end_r"/>
 
-<link name="lowerleg_twist_r"/>
+<link name="calf_twist_r"/>
 
-<link name="upperleg_twist_r"/>
+<link name="thigh_twist_r"/>
 
 <link name="ik_foot_root"/>
 
@@ -496,14 +496,14 @@
 <link name="ik_hand_l"/>
 
 
-<joint name="root_to_hip" type="fixed">
+<joint name="root_to_pelvis" type="fixed">
   <parent link="root"/>
-  <child link="hip"/>
+  <child link="pelvis"/>
   <origin rpy="-0.008681337481024287 0.24583410449739423 0.2416461027967589" xyz="-0.00327410455793 0.101470641792 0.9128947258"/>
 </joint>
 
-<joint name="hip_to_spine_01" type="fixed">
-  <parent link="hip"/>
+<joint name="pelvis_to_spine_01" type="fixed">
+  <parent link="pelvis"/>
   <child link="spine_01"/>
   <origin rpy="0.9887383711231866 0.0008396338430066877 0.01093147511109891" xyz="0.147955521941 -0.0129172177985 -5.01933818953e-08"/>
 </joint>
@@ -520,14 +520,14 @@
   <origin rpy="0.0133250057697 0.00721091032028 0.00288556516171" xyz="0.148347228765 0.0136523600668 -0.00273125316016"/>
 </joint>
 
-<joint name="spine_03_to_neck" type="fixed">
+<joint name="spine_03_to_neck_01" type="fixed">
   <parent link="spine_03"/>
-  <child link="neck"/>
+  <child link="neck_01"/>
   <origin rpy="0.0797079652548 0.0167903900146 -0.04035808146" xyz="0.148433417082 0.0128616830334 -0.00602402957156"/>
 </joint>
 
-<joint name="neck_to_head" type="fixed">
-  <parent link="neck"/>
+<joint name="neck_01_to_head" type="fixed">
+  <parent link="neck_01"/>
   <child link="head"/>
   <origin rpy="0.0681002438068 0.00491692125797 0.174194231629" xyz="0.0755760595202 -0.00537412054837 -0.00097730034031"/>
 </joint>
@@ -574,14 +574,14 @@
   <origin rpy="0.0 0.0 0.0" xyz="0.0149999968708 -6.74081519492e-08 -5.55264314528e-08"/>
 </joint>
 
-<joint name="spine_03_to_shoulder_l" type="fixed">
+<joint name="spine_03_to_clavicle_l" type="fixed">
   <parent link="spine_03"/>
-  <child link="shoulder_l"/>
+  <child link="clavicle_l"/>
   <origin rpy="0.0974436700344 0.725871682167 0.0150327533484" xyz="0.103866547346 -0.0124222813174 -0.0371810607612"/>
 </joint>
 
-<joint name="shoulder_l_to_upperarm_l" type="fixed">
-  <parent link="shoulder_l"/>
+<joint name="clavicle_l_to_upperarm_l" type="fixed">
+  <parent link="clavicle_l"/>
   <child link="upperarm_l"/>
   <origin rpy="0.0238880813122 0.469722896814 -0.13654795289" xyz="0.128845497966 0.0631972700357 -0.0019424300408"/>
 </joint>
@@ -730,14 +730,14 @@
   <origin rpy="-0.00270357728004 -0.000196859240532 0.000223219394684" xyz="0.149999886751 -5.01933818953e-08 -8.03094195589e-08"/>
 </joint>
 
-<joint name="spine_03_to_shoulder_r" type="fixed">
+<joint name="spine_03_to_clavicle_r" type="fixed">
   <parent link="spine_03"/>
-  <child link="shoulder_r"/>
+  <child link="clavicle_r"/>
   <origin rpy="0.676524996758 -0.0702666938305 -0.732984602451" xyz="0.109931521118 -0.0129764638841 0.0294459741563"/>
 </joint>
 
-<joint name="shoulder_r_to_upperarm_r" type="fixed">
-  <parent link="shoulder_r"/>
+<joint name="clavicle_r_to_upperarm_r" type="fixed">
+  <parent link="clavicle_r"/>
   <child link="upperarm_r"/>
   <origin rpy="0.2090934515 0.451155275106 -0.327468305826" xyz="-0.120959401131 -0.0593282207847 0.00182377407327"/>
 </joint>
@@ -886,20 +886,20 @@
   <origin rpy="-0.160621166229 -0.0117125883698 0.0132591351867" xyz="-0.139236912131 -0.0101542491466 0.0114930104464"/>
 </joint>
 
-<joint name="hip_to_upperleg_l" type="fixed">
-  <parent link="hip"/>
-  <child link="upperleg_l"/>
+<joint name="pelvis_to_thigh_l" type="fixed">
+  <parent link="pelvis"/>
+  <child link="thigh_l"/>
   <origin rpy="0.140670761466 -0.0486810952425 0.172580957413" xyz="-0.0145145617425 -0.00518470583484 -0.0899454131722"/>
 </joint>
 
-<joint name="upperleg_l_to_lowerleg_l" type="fixed">
-  <parent link="upperleg_l"/>
-  <child link="lowerleg_l"/>
+<joint name="thigh_l_to_calf_l" type="fixed">
+  <parent link="thigh_l"/>
+  <child link="calf_l"/>
   <origin rpy="0.00360685586929 -0.0122226774693 -0.173642396927" xyz="-0.420130312443 1.00386763791e-07 1.60618839118e-07"/>
 </joint>
 
-<joint name="lowerleg_l_to_foot_l" type="fixed">
-  <parent link="lowerleg_l"/>
+<joint name="calf_l_to_foot_l" type="fixed">
+  <parent link="calf_l"/>
   <child link="foot_l"/>
   <origin rpy="0.0182572603226 0.0458440929651 0.00348563492298" xyz="-0.421743512154 0.0208540670574 -0.0276844631881"/>
 </joint>
@@ -916,32 +916,32 @@
   <origin rpy="0.0 0.0 0.0" xyz="0.0667766407132 1.09798037329e-09 5.23893461946e-08"/>
 </joint>
 
-<joint name="lowerleg_l_to_lowerleg_twist_l" type="fixed">
-  <parent link="lowerleg_l"/>
-  <child link="lowerleg_twist_l"/>
+<joint name="calf_l_to_calf_twist_l" type="fixed">
+  <parent link="calf_l"/>
+  <child link="calf_twist_l"/>
   <origin rpy="0.0241432338953 8.12411308289e-05 -0.00107330083847" xyz="-0.220735520124 0.0143435029313 -0.0151363778859"/>
 </joint>
 
-<joint name="upperleg_l_to_upperleg_twist_l" type="fixed">
-  <parent link="upperleg_l"/>
-  <child link="upperleg_twist_l"/>
+<joint name="thigh_l_to_thigh_twist_l" type="fixed">
+  <parent link="thigh_l"/>
+  <child link="thigh_twist_l"/>
   <origin rpy="-0.0338423848152 -3.13520431519e-05 0.00150185823441" xyz="-0.20844489336 0.00411380454898 -0.0257120840251"/>
 </joint>
 
-<joint name="hip_to_upperleg_r" type="fixed">
-  <parent link="hip"/>
-  <child link="upperleg_r"/>
+<joint name="pelvis_to_thigh_r" type="fixed">
+  <parent link="pelvis"/>
+  <child link="thigh_r"/>
   <origin rpy="-0.0224179774523 -0.0360192358494 -0.997545480728" xyz="-0.0145128397271 -0.00518464576453 0.089945524931"/>
 </joint>f
 
-<joint name="upperleg_r_to_lowerleg_r" type="fixed">
-  <parent link="upperleg_r"/>
-  <child link="lowerleg_r"/>
+<joint name="thigh_r_to_calf_r" type="fixed">
+  <parent link="thigh_r"/>
+  <child link="calf_r"/>
   <origin rpy="-0.0120081305504 -0.012731730938 -0.216187998652" xyz="0.418992042542 8.03094195589e-08 -1.20464122233e-07"/>
 </joint>
 
-<joint name="lowerleg_r_to_foot_r" type="fixed">
-  <parent link="lowerleg_r"/>
+<joint name="calf_r_to_foot_r" type="fixed">
+  <parent link="calf_r"/>
   <child link="foot_r"/>
   <origin rpy="0.0545608997345 0.045284897089 0.169531449676" xyz="0.419454842806 -0.0155709739774 0.0269763749093"/>
 </joint>
@@ -958,15 +958,15 @@
   <origin rpy="0.0 0.0 0.0" xyz="-0.064597658813 0.0 2.158315624e-07"/>
 </joint>
 
-<joint name="lowerleg_r_to_lowerleg_twist_r" type="fixed">
-  <parent link="lowerleg_r"/>
-  <child link="lowerleg_twist_r"/>
+<joint name="calf_r_to_calf_twist_r" type="fixed">
+  <parent link="calf_r"/>
+  <child link="calf_twist_r"/>
   <origin rpy="0.051498323679 0.000987589359283 -0.00231440365314" xyz="0.22137466073 -0.0116511350498 0.0148830814287"/>
 </joint>
 
-<joint name="upperleg_r_to_upperleg_twist_r" type="fixed">
-  <parent link="upperleg_r"/>
-  <child link="upperleg_twist_r"/>
+<joint name="thigh_r_to_thigh_twist_r" type="fixed">
+  <parent link="thigh_r"/>
+  <child link="thigh_twist_r"/>
   <origin rpy="0.0548547059298 0.000125348567963 -0.00242139399052" xyz="0.207881107926 -0.00411987304688 0.0256331600249"/>
 </joint>
 

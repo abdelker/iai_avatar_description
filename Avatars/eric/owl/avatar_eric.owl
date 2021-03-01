@@ -55,7 +55,7 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/avatar_eric.owl#avatar_eric_1">
         <rdf:type rdf:resource="http://knowrob.org/kb/avatar_eric.owl#avatar_eric"/>
         <urdf:hasURDFName>root</urdf:hasURDFName>
-        <dul:hasComponent rdf:resource="http://knowrob.org/kb/avatar_eric.owl#avatar_eric_hip"/>
+        <dul:hasComponent rdf:resource="http://knowrob.org/kb/avatar_eric.owl#avatar_eric_pelvis"/>
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/avatar_eric.owl#avatar_eric_spine"/>
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/avatar_eric.owl#avatar_eric_leg_l"/>
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/avatar_eric.owl#avatar_eric_leg_r"/>
@@ -66,27 +66,27 @@
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/avatar_eric.owl#avatar_eric_head"/>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/avatar_eric.owl#avatar_eric_hip">
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/avatar_eric.owl#avatar_eric_pelvis">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody"/>
         <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">root</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hip</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pelvis</urdf:hasEndLinkName>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/avatar_eric.owl#avatar_eric_spine">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hip</urdf:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pelvis</urdf:hasBaseLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spine_03</urdf:hasEndLinkName>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/avatar_eric.owl#avatar_eric_leg_l">
         <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Leg"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hip</urdf:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pelvis</urdf:hasBaseLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ball_l</urdf:hasEndLinkName>
     </owl:NamedIndividual>
 
      <owl:NamedIndividual rdf:about="http://knowrob.org/kb/avatar_eric.owl#avatar_eric_leg_r">
         <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Leg"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hip</urdf:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pelvis</urdf:hasBaseLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ball_r</urdf:hasEndLinkName>
     </owl:NamedIndividual>
 
