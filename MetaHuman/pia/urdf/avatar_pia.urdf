@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="avatar_pia">
+
 <link name="root">
+<visual>
+    <geometry>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/feet.obj"/>
+    </geometry>
+  </visual>
 </link>
 
 <link name="pelvis">
-  <!-- visual>
+  <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/pelvis.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/legs.obj"/>
     </geometry>
-  </visual -->
+  </visual>
 </link>
 
 <link name="spine_01">
   <!-- visual>
     <geometry>
-      < mesh filename="package://iai_avatar_description/Avatars/pia/meshes/spine_01.dae" scale="1 1 1"/>
+      < mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/spine_01.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -22,23 +28,47 @@
 <link name="spine_02">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/spine_02.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/spine_02.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
 
 <link name="spine_03">
+  <!-- visual>
+    <geometry>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/torso.obj"/>
+    </geometry>
+  </visual -->
+</link>
+
+<link name="spine_04">
   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes_simple/spine.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/torso.obj"/>
     </geometry>
   </visual>
+</link>
+
+<link name="spine_05">
+  <!-- visual>
+    <geometry>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/torso.obj"/>
+    </geometry>
+  </visual -->
 </link>
 
 <link name="neck_01">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/neck_01.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/neck_01.dae" scale="1 1 1"/>
+    </geometry>
+  </visual -->
+</link>
+
+<link name="neck_02">
+  <!-- visual>
+    <geometry>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/neck_01.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -46,7 +76,7 @@
 <link name="head">
   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes_simple/head.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/head.obj"/>
     </geometry>
   </visual>
 </link>
@@ -56,7 +86,7 @@
 <link name="jaw">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/jaw.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/jaw.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -66,7 +96,7 @@
 <link name="eye_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/eye_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/eye_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -76,7 +106,7 @@
 <link name="eye_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/eye_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/eye_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -87,17 +117,17 @@
 
 
 <link name="upperarm_l">
- <visual>
+ <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes_simple/arm_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes_simple/arm_l.dae" scale="1 1 1"/>
     </geometry>
-  </visual>
+  </visual -->
 </link>
 
 <link name="lowerarm_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/lowerarm_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/lowerarm_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -105,7 +135,7 @@
 <link name="hand_l">
   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes_simple/hand_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/hand_l.obj"/>
     </geometry>
   </visual>
 </link>
@@ -113,7 +143,7 @@
 <link name="thumb_01_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/thumb_01_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/thumb_01_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -121,7 +151,7 @@
 <link name="thumb_02_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/thumb_02_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/thumb_02_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -129,7 +159,7 @@
 <link name="thumb_03_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/thumb_03_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/thumb_03_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -139,7 +169,7 @@
 <link name="index_01_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/index_01_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/index_01_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -147,7 +177,7 @@
 <link name="index_02_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/index_02_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/index_02_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -155,7 +185,7 @@
 <link name="index_03_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/index_03_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/index_03_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -165,7 +195,7 @@
 <link name="middle_01_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/middle_01_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/middle_01_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -173,7 +203,7 @@
 <link name="middle_02_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/middle_02_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/middle_02_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -181,7 +211,7 @@
 <link name="middle_03_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/middle_03_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/middle_03_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -191,7 +221,7 @@
 <link name="ring_01_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/ring_01_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/ring_01_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -199,7 +229,7 @@
 <link name="ring_02_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/ring_02_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/ring_02_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -207,7 +237,7 @@
 <link name="ring_03_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/ring_03_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/ring_03_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -217,7 +247,7 @@
 <link name="pinky_01_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/pinky_01_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/pinky_01_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -225,7 +255,7 @@
 <link name="pinky_02_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/pinky_02_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/pinky_02_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -233,7 +263,7 @@
 <link name="pinky_03_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/pinky_03_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/pinky_03_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -248,17 +278,17 @@
 
 
 <link name="upperarm_r">
-  <visual>
+  <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes_simple/arm_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes_simple/arm_r.dae" scale="1 1 1"/>
     </geometry>
-  </visual>
+  </visual -->
 </link>
 
 <link name="lowerarm_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/lowerarm_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/lowerarm_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -266,7 +296,7 @@
 <link name="hand_r">
   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes_simple/hand_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/hand_r.obj"/>
     </geometry>
   </visual>
 </link>
@@ -274,7 +304,7 @@
 <link name="thumb_01_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/thumb_01_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/thumb_01_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -282,7 +312,7 @@
 <link name="thumb_02_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/thumb_02_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/thumb_02_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -290,7 +320,7 @@
 <link name="thumb_03_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/thumb_03_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/thumb_03_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -300,7 +330,7 @@
 <link name="index_01_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/index_01_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/index_01_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -308,7 +338,7 @@
 <link name="index_02_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/index_02_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/index_02_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -316,7 +346,7 @@
 <link name="index_03_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/index_03_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/index_03_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -326,7 +356,7 @@
 <link name="middle_01_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/middle_01_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/middle_01_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -334,7 +364,7 @@
 <link name="middle_02_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/middle_02_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/middle_02_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -342,7 +372,7 @@
 <link name="middle_03_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/middle_03_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/middle_03_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -352,7 +382,7 @@
 <link name="ring_01_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/ring_01_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/ring_01_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -360,7 +390,7 @@
 <link name="ring_02_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/ring_02_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/ring_02_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -368,7 +398,7 @@
 <link name="ring_03_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/ring_03_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/ring_03_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -378,7 +408,7 @@
 <link name="pinky_01_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/pinky_01_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/pinky_01_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -386,7 +416,7 @@
 <link name="pinky_02_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/pinky_02_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/pinky_02_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -394,7 +424,7 @@
 <link name="pinky_03_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/pinky_03_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/pinky_03_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -406,17 +436,17 @@
 <link name="upperarm_twist_r"/>
 
 <link name="thigh_l">
-  <visual>
+  <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes_simple/leg_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes_simple/leg_l.dae" scale="1 1 1"/>
     </geometry>
-  </visual>
+  </visual -->
 </link>
 
 <link name="calf_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/calf_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/calf_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -424,7 +454,7 @@
 <link name="foot_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/foot_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/foot_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -432,7 +462,7 @@
 <link name="ball_l">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/ball_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/ball_l.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -444,17 +474,17 @@
 <link name="thigh_twist_l"/>
 
 <link name="thigh_r">
-  <visual>
+  <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes_simple/leg_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes_simple/leg_r.dae" scale="1 1 1"/>
     </geometry>
-  </visual>
+  </visual -->
 </link>
 
 <link name="calf_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/calf_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/calf_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -462,7 +492,7 @@
 <link name="foot_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/foot_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/foot_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -470,7 +500,7 @@
 <link name="ball_r">
   <!-- visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/Avatars/pia/meshes/ball_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/ball_r.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -520,14 +550,32 @@
   <origin rpy="0.0133250057697 0.00721091032028 0.00288556516171" xyz="0.148347228765 0.0136523600668 -0.00273125316016"/>
 </joint>
 
-<joint name="spine_03_to_neck_01" type="fixed">
+<joint name="spine_03_to_spine_04" type="fixed">
   <parent link="spine_03"/>
-  <child link="neck_01"/>
+  <child link="spine_04"/>
   <origin rpy="0.0797079652548 0.0167903900146 -0.04035808146" xyz="0.148433417082 0.0128616830334 -0.00602402957156"/>
 </joint>
 
-<joint name="neck_01_to_head" type="fixed">
+<joint name="spine_04_to_spine_05" type="fixed">
+  <parent link="spine_04"/>
+  <child link="spine_05"/>
+  <origin rpy="0.0681002438068 0.00491692125797 0.174194231629" xyz="0.0755760595202 -0.00537412054837 -0.00097730034031"/>
+</joint>
+
+<joint name="spine_05_to_neck_01" type="fixed">
+  <parent link="spine_05"/>
+  <child link="neck_01"/>
+  <origin rpy="0.0681002438068 0.00491692125797 0.174194231629" xyz="0.0755760595202 -0.00537412054837 -0.00097730034031"/>
+</joint>
+
+<joint name="neck_01_to_neck_02" type="fixed">
   <parent link="neck_01"/>
+  <child link="neck_02"/>
+  <origin rpy="0.0681002438068 0.00491692125797 0.174194231629" xyz="0.0755760595202 -0.00537412054837 -0.00097730034031"/>
+</joint>
+
+<joint name="neck_02_to_head" type="fixed">
+  <parent link="neck_02"/>
   <child link="head"/>
   <origin rpy="0.0681002438068 0.00491692125797 0.174194231629" xyz="0.0755760595202 -0.00537412054837 -0.00097730034031"/>
 </joint>
