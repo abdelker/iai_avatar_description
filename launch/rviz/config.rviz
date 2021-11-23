@@ -6,9 +6,13 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /RobotModel1/Status1
-      Splitter Ratio: 0.5
-    Tree Height: 679
+        - /RobotModel1
+        - /RobotModel1/Links1
+        - /TF1
+        - /TF1/Frames1
+        - /TF1/Tree1
+      Splitter Ratio: 0.49494948983192444
+    Tree Height: 614
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -39,7 +43,7 @@ Visualization Manager:
       Cell Size: 1
       Class: rviz/Grid
       Color: 160; 160; 164
-      Enabled: true
+      Enabled: false
       Line Style:
         Line Width: 0.029999999329447746
         Value: Lines
@@ -52,13 +56,13 @@ Visualization Manager:
       Plane: XY
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
-      Value: true
+      Value: false
     - Alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
       Enabled: true
       Links:
-        All Links Enabled: true
+        All Links Enabled: false
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
@@ -266,10 +270,15 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+        neck_02:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         pelvis:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+          Value: true
         pinky_01_l:
           Alpha: 1
           Show Axes: false
@@ -338,6 +347,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+          Value: true
         spine_01:
           Alpha: 1
           Show Axes: false
@@ -350,17 +360,23 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+        spine_04:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
+        spine_05:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         thigh_l:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         thigh_r:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         thigh_twist_l:
           Alpha: 1
           Show Axes: false
@@ -405,12 +421,10 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         upperarm_r:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         upperarm_twist_l:
           Alpha: 1
           Show Axes: false
@@ -426,25 +440,558 @@ Visualization Manager:
       Value: true
       Visual Enabled: true
     - Class: rviz/TF
-      Enabled: false
+      Enabled: true
       Frame Timeout: 15
       Frames:
-        All Enabled: true
+        All Enabled: false
+        ankle_bck_l:
+          Value: false
+        ankle_bck_r:
+          Value: false
+        ankle_fwd_l:
+          Value: false
+        ankle_fwd_r:
+          Value: false
+        ball_l:
+          Value: false
+        ball_r:
+          Value: false
+        calf_correctiveRoot_l:
+          Value: false
+        calf_correctiveRoot_r:
+          Value: false
+        calf_kneeBack_l:
+          Value: false
+        calf_kneeBack_r:
+          Value: false
+        calf_knee_l:
+          Value: false
+        calf_knee_r:
+          Value: false
+        calf_l:
+          Value: false
+        calf_r:
+          Value: false
+        calf_twistCor_02_l:
+          Value: false
+        calf_twistCor_02_r:
+          Value: false
+        calf_twist_01_l:
+          Value: false
+        calf_twist_01_r:
+          Value: false
+        calf_twist_02_l:
+          Value: false
+        calf_twist_02_r:
+          Value: false
+        clavicle_l:
+          Value: true
+        clavicle_out_l:
+          Value: false
+        clavicle_out_r:
+          Value: false
+        clavicle_pec_l:
+          Value: false
+        clavicle_pec_r:
+          Value: false
+        clavicle_r:
+          Value: true
+        clavicle_scap_l:
+          Value: false
+        clavicle_scap_r:
+          Value: false
+        foot_l:
+          Value: false
+        foot_r:
+          Value: false
+        hand_l:
+          Value: true
+        hand_r:
+          Value: true
+        head:
+          Value: false
+        index_01_l:
+          Value: false
+        index_01_r:
+          Value: false
+        index_02_l:
+          Value: false
+        index_02_r:
+          Value: false
+        index_03_l:
+          Value: false
+        index_03_r:
+          Value: false
+        index_metacarpal_l:
+          Value: false
+        index_metacarpal_r:
+          Value: false
+        lowerarm_bck_l:
+          Value: false
+        lowerarm_bck_r:
+          Value: false
+        lowerarm_correctiveRoot_l:
+          Value: false
+        lowerarm_correctiveRoot_r:
+          Value: false
+        lowerarm_fwd_l:
+          Value: false
+        lowerarm_fwd_r:
+          Value: false
+        lowerarm_in_l:
+          Value: false
+        lowerarm_in_r:
+          Value: false
+        lowerarm_l:
+          Value: true
+        lowerarm_out_l:
+          Value: false
+        lowerarm_out_r:
+          Value: false
+        lowerarm_r:
+          Value: true
+        lowerarm_twist_01_l:
+          Value: false
+        lowerarm_twist_01_r:
+          Value: false
+        lowerarm_twist_02_l:
+          Value: false
+        lowerarm_twist_02_r:
+          Value: false
+        middle_01_l:
+          Value: false
+        middle_01_r:
+          Value: false
+        middle_02_l:
+          Value: false
+        middle_02_r:
+          Value: false
+        middle_03_l:
+          Value: false
+        middle_03_r:
+          Value: false
+        middle_metacarpal_l:
+          Value: false
+        middle_metacarpal_r:
+          Value: false
+        neck_01:
+          Value: false
+        neck_02:
+          Value: false
+        pelvis:
+          Value: true
+        pinky_01_l:
+          Value: false
+        pinky_01_r:
+          Value: false
+        pinky_02_l:
+          Value: false
+        pinky_02_r:
+          Value: false
+        pinky_03_l:
+          Value: false
+        pinky_03_r:
+          Value: false
+        pinky_metacarpal_l:
+          Value: false
+        pinky_metacarpal_r:
+          Value: false
+        ring_01_l:
+          Value: false
+        ring_01_r:
+          Value: false
+        ring_02_l:
+          Value: false
+        ring_02_r:
+          Value: false
+        ring_03_l:
+          Value: false
+        ring_03_r:
+          Value: false
+        ring_metacarpal_l:
+          Value: false
+        ring_metacarpal_r:
+          Value: false
+        root:
+          Value: true
+        spine_01:
+          Value: true
+        spine_02:
+          Value: true
+        spine_03:
+          Value: true
+        spine_04:
+          Value: true
+        spine_04_latissimus_l:
+          Value: false
+        spine_04_latissimus_r:
+          Value: false
+        spine_05:
+          Value: true
+        thigh_bck_l:
+          Value: false
+        thigh_bck_lwr_l:
+          Value: false
+        thigh_bck_lwr_r:
+          Value: false
+        thigh_bck_r:
+          Value: false
+        thigh_correctiveRoot_l:
+          Value: false
+        thigh_correctiveRoot_r:
+          Value: false
+        thigh_fwd_l:
+          Value: false
+        thigh_fwd_lwr_l:
+          Value: false
+        thigh_fwd_lwr_r:
+          Value: false
+        thigh_fwd_r:
+          Value: false
+        thigh_in_l:
+          Value: false
+        thigh_in_r:
+          Value: false
+        thigh_l:
+          Value: false
+        thigh_out_l:
+          Value: false
+        thigh_out_r:
+          Value: false
+        thigh_r:
+          Value: false
+        thigh_twistCor_01_l:
+          Value: false
+        thigh_twistCor_01_r:
+          Value: false
+        thigh_twistCor_02_l:
+          Value: false
+        thigh_twistCor_02_r:
+          Value: false
+        thigh_twist_01_l:
+          Value: false
+        thigh_twist_01_r:
+          Value: false
+        thigh_twist_02_l:
+          Value: false
+        thigh_twist_02_r:
+          Value: false
+        thumb_01_l:
+          Value: false
+        thumb_01_r:
+          Value: false
+        thumb_02_l:
+          Value: false
+        thumb_02_r:
+          Value: false
+        thumb_03_l:
+          Value: false
+        thumb_03_r:
+          Value: false
+        upperarm_bck_l:
+          Value: false
+        upperarm_bck_r:
+          Value: false
+        upperarm_bicep_l:
+          Value: false
+        upperarm_bicep_r:
+          Value: false
+        upperarm_correctiveRoot_l:
+          Value: false
+        upperarm_correctiveRoot_r:
+          Value: false
+        upperarm_fwd_l:
+          Value: false
+        upperarm_fwd_r:
+          Value: false
+        upperarm_in_l:
+          Value: false
+        upperarm_in_r:
+          Value: false
+        upperarm_l:
+          Value: true
+        upperarm_out_l:
+          Value: false
+        upperarm_out_r:
+          Value: false
+        upperarm_r:
+          Value: true
+        upperarm_tricep_l:
+          Value: false
+        upperarm_tricep_r:
+          Value: false
+        upperarm_twistCor_01_l:
+          Value: false
+        upperarm_twistCor_01_r:
+          Value: false
+        upperarm_twistCor_02_l:
+          Value: false
+        upperarm_twistCor_02_r:
+          Value: false
+        upperarm_twist_01_l:
+          Value: false
+        upperarm_twist_01_r:
+          Value: false
+        upperarm_twist_02_l:
+          Value: false
+        upperarm_twist_02_r:
+          Value: false
+        world:
+          Value: false
+        wrist_inner_l:
+          Value: false
+        wrist_inner_r:
+          Value: false
+        wrist_outer_l:
+          Value: false
+        wrist_outer_r:
+          Value: false
       Marker Alpha: 1
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
-      Show Names: true
+      Show Names: false
       Tree:
-        {}
+        world:
+          root:
+            pelvis:
+              spine_01:
+                spine_02:
+                  spine_03:
+                    spine_04:
+                      spine_05:
+                        clavicle_l:
+                          clavicle_out_l:
+                            {}
+                          clavicle_scap_l:
+                            {}
+                          upperarm_l:
+                            lowerarm_l:
+                              hand_l:
+                                index_metacarpal_l:
+                                  index_01_l:
+                                    index_02_l:
+                                      index_03_l:
+                                        {}
+                                middle_metacarpal_l:
+                                  middle_01_l:
+                                    middle_02_l:
+                                      middle_03_l:
+                                        {}
+                                pinky_metacarpal_l:
+                                  pinky_01_l:
+                                    pinky_02_l:
+                                      pinky_03_l:
+                                        {}
+                                ring_metacarpal_l:
+                                  ring_01_l:
+                                    ring_02_l:
+                                      ring_03_l:
+                                        {}
+                                thumb_01_l:
+                                  thumb_02_l:
+                                    thumb_03_l:
+                                      {}
+                                wrist_inner_l:
+                                  {}
+                                wrist_outer_l:
+                                  {}
+                              lowerarm_correctiveRoot_l:
+                                lowerarm_bck_l:
+                                  {}
+                                lowerarm_fwd_l:
+                                  {}
+                                lowerarm_in_l:
+                                  {}
+                                lowerarm_out_l:
+                                  {}
+                              lowerarm_twist_01_l:
+                                {}
+                              lowerarm_twist_02_l:
+                                {}
+                            upperarm_correctiveRoot_l:
+                              upperarm_bck_l:
+                                {}
+                              upperarm_fwd_l:
+                                {}
+                              upperarm_in_l:
+                                {}
+                              upperarm_out_l:
+                                {}
+                            upperarm_twist_01_l:
+                              upperarm_twistCor_01_l:
+                                {}
+                            upperarm_twist_02_l:
+                              upperarm_bicep_l:
+                                {}
+                              upperarm_tricep_l:
+                                {}
+                              upperarm_twistCor_02_l:
+                                {}
+                        clavicle_pec_l:
+                          {}
+                        clavicle_pec_r:
+                          {}
+                        clavicle_r:
+                          clavicle_out_r:
+                            {}
+                          clavicle_scap_r:
+                            {}
+                          upperarm_r:
+                            lowerarm_r:
+                              hand_r:
+                                index_metacarpal_r:
+                                  index_01_r:
+                                    index_02_r:
+                                      index_03_r:
+                                        {}
+                                middle_metacarpal_r:
+                                  middle_01_r:
+                                    middle_02_r:
+                                      middle_03_r:
+                                        {}
+                                pinky_metacarpal_r:
+                                  pinky_01_r:
+                                    pinky_02_r:
+                                      pinky_03_r:
+                                        {}
+                                ring_metacarpal_r:
+                                  ring_01_r:
+                                    ring_02_r:
+                                      ring_03_r:
+                                        {}
+                                thumb_01_r:
+                                  thumb_02_r:
+                                    thumb_03_r:
+                                      {}
+                                wrist_inner_r:
+                                  {}
+                                wrist_outer_r:
+                                  {}
+                              lowerarm_correctiveRoot_r:
+                                lowerarm_bck_r:
+                                  {}
+                                lowerarm_fwd_r:
+                                  {}
+                                lowerarm_in_r:
+                                  {}
+                                lowerarm_out_r:
+                                  {}
+                              lowerarm_twist_01_r:
+                                {}
+                              lowerarm_twist_02_r:
+                                {}
+                            upperarm_correctiveRoot_r:
+                              upperarm_bck_r:
+                                {}
+                              upperarm_fwd_r:
+                                {}
+                              upperarm_in_r:
+                                {}
+                              upperarm_out_r:
+                                {}
+                            upperarm_twist_01_r:
+                              upperarm_twistCor_01_r:
+                                {}
+                            upperarm_twist_02_r:
+                              upperarm_bicep_r:
+                                {}
+                              upperarm_tricep_r:
+                                {}
+                              upperarm_twistCor_02_r:
+                                {}
+                        neck_01:
+                          neck_02:
+                            head:
+                              {}
+                        spine_04_latissimus_l:
+                          {}
+                        spine_04_latissimus_r:
+                          {}
+              thigh_l:
+                calf_l:
+                  calf_correctiveRoot_l:
+                    calf_kneeBack_l:
+                      {}
+                    calf_knee_l:
+                      {}
+                  calf_twist_01_l:
+                    {}
+                  calf_twist_02_l:
+                    calf_twistCor_02_l:
+                      {}
+                  foot_l:
+                    ankle_bck_l:
+                      {}
+                    ankle_fwd_l:
+                      {}
+                    ball_l:
+                      {}
+                thigh_correctiveRoot_l:
+                  thigh_bck_l:
+                    {}
+                  thigh_bck_lwr_l:
+                    {}
+                  thigh_fwd_l:
+                    {}
+                  thigh_fwd_lwr_l:
+                    {}
+                  thigh_in_l:
+                    {}
+                  thigh_out_l:
+                    {}
+                thigh_twist_01_l:
+                  thigh_twistCor_01_l:
+                    {}
+                thigh_twist_02_l:
+                  thigh_twistCor_02_l:
+                    {}
+              thigh_r:
+                calf_r:
+                  calf_correctiveRoot_r:
+                    calf_kneeBack_r:
+                      {}
+                    calf_knee_r:
+                      {}
+                  calf_twist_01_r:
+                    {}
+                  calf_twist_02_r:
+                    calf_twistCor_02_r:
+                      {}
+                  foot_r:
+                    ankle_bck_r:
+                      {}
+                    ankle_fwd_r:
+                      {}
+                    ball_r:
+                      {}
+                thigh_correctiveRoot_r:
+                  thigh_bck_lwr_r:
+                    {}
+                  thigh_bck_r:
+                    {}
+                  thigh_fwd_lwr_r:
+                    {}
+                  thigh_fwd_r:
+                    {}
+                  thigh_in_r:
+                    {}
+                  thigh_out_r:
+                    {}
+                thigh_twist_01_r:
+                  thigh_twistCor_01_r:
+                    {}
+                thigh_twist_02_r:
+                  thigh_twistCor_02_r:
+                    {}
       Update Interval: 0
-      Value: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: world
+    Fixed Frame: root
     Frame Rate: 30
   Name: root
   Tools:
@@ -468,7 +1015,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 4.148538112640381
+      Distance: 0.9337170124053955
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -476,25 +1023,25 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 1.4637572765350342
-        Y: 0.932246208190918
-        Z: -1.6934617757797241
+        X: -0.17942911386489868
+        Y: -0.17546740174293518
+        Z: 0.5249835252761841
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.815398097038269
+      Pitch: 0.5303982496261597
       Target Frame: <Fixed Frame>
-      Yaw: 1.2353979349136353
+      Yaw: 3.9803881645202637
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 976
+  Height: 911
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd00000004000000000000015600000332fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d00000332000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f00000332fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003d00000332000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007800000003efc0100000002fb0000000800540069006d0065010000000000000780000002eb00fffffffb0000000800540069006d006501000000000000045000000000000000000000050f0000033200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000001f1000002f1fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d000002f1000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f000002f1fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003d000002f1000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007560000003efc0100000002fb0000000800540069006d0065010000000000000756000002eb00fffffffb0000000800540069006d006501000000000000045000000000000000000000044a000002f100000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -503,6 +1050,6 @@ Window Geometry:
     collapsed: false
   Views:
     collapsed: false
-  Width: 1920
-  X: 0
+  Width: 1878
+  X: 42
   Y: 27
