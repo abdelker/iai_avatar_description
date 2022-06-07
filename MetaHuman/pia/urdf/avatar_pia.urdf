@@ -81,8 +81,6 @@
   </visual>
 </link>
 
-<link name="head_end"/>
-
 <link name="jaw">
   <!-- visual>
     <geometry>
@@ -91,7 +89,6 @@
   </visual -->
 </link>
 
-<link name="jaw_end"/>
 
 <link name="eye_l">
   <!-- visual>
@@ -101,8 +98,6 @@
   </visual -->
 </link>
 
-<link name="eye_end_l"/>
-
 <link name="eye_r">
   <!-- visual>
     <geometry>
@@ -110,8 +105,6 @@
     </geometry>
   </visual -->
 </link>
-
-<link name="eye_end_r"/>
 
 <link name="clavicle_l"/>
 
@@ -164,8 +157,6 @@
   </visual -->
 </link>
 
-<link name="thumb_end_l"/>
-
 <link name="index_01_l">
   <!-- visual>
     <geometry>
@@ -189,8 +180,6 @@
     </geometry>
   </visual -->
 </link>
-
-<link name="index_end_l"/>
 
 <link name="middle_01_l">
   <!-- visual>
@@ -216,8 +205,6 @@
   </visual -->
 </link>
 
-<link name="middle_end_l"/>
-
 <link name="ring_01_l">
   <!-- visual>
     <geometry>
@@ -242,8 +229,6 @@
   </visual -->
 </link>
 
-<link name="ring_end_l"/>
-
 <link name="pinky_01_l">
   <!-- visual>
     <geometry>
@@ -267,12 +252,6 @@
     </geometry>
   </visual -->
 </link>
-
-<link name="pinky_end_l"/>
-
-<link name="lowerarm_twist_l"/>
-
-<link name="upperarm_twist_l"/>
 
 <link name="clavicle_r"/>
 
@@ -325,8 +304,6 @@
   </visual -->
 </link>
 
-<link name="thumb_end_r"/>
-
 <link name="index_01_r">
   <!-- visual>
     <geometry>
@@ -350,8 +327,6 @@
     </geometry>
   </visual -->
 </link>
-
-<link name="index_end_r"/>
 
 <link name="middle_01_r">
   <!-- visual>
@@ -377,8 +352,6 @@
   </visual -->
 </link>
 
-<link name="middle_end_r"/>
-
 <link name="ring_01_r">
   <!-- visual>
     <geometry>
@@ -403,8 +376,6 @@
   </visual -->
 </link>
 
-<link name="ring_end_r"/>
-
 <link name="pinky_01_r">
   <!-- visual>
     <geometry>
@@ -428,12 +399,6 @@
     </geometry>
   </visual -->
 </link>
-
-<link name="pinky_end_r"/>
-
-<link name="lowerarm_twist_r"/>
-
-<link name="upperarm_twist_r"/>
 
 <link name="thigh_l">
   <!-- visual>
@@ -467,12 +432,6 @@
   </visual -->
 </link>
 
-<link name="foot_end_l"/>
-
-<link name="calf_twist_l"/>
-
-<link name="thigh_twist_l"/>
-
 <link name="thigh_r">
   <!-- visual>
     <geometry>
@@ -504,27 +463,6 @@
     </geometry>
   </visual -->
 </link>
-
-<link name="foot_end_r"/>
-
-<link name="calf_twist_r"/>
-
-<link name="thigh_twist_r"/>
-
-<link name="ik_foot_root"/>
-
-<link name="ik_foot_r"/>
-
-<link name="ik_foot_l"/>
-
-<link name="ik_hand_root"/>
-
-<link name="ik_hand_gun"/>
-
-<link name="ik_hand_r"/>
-
-<link name="ik_hand_l"/>
-
 
 <joint name="root_to_pelvis" type="fixed">
   <parent link="root"/>
@@ -580,22 +518,10 @@
   <origin rpy="0.0681002438068 0.00491692125797 0.174194231629" xyz="0.0755760595202 -0.00537412054837 -0.00097730034031"/>
 </joint>
 
-<joint name="head_to_head_end" type="fixed">
-  <parent link="head"/>
-  <child link="head_end"/>
-  <origin rpy="0.0 0.0 0.0" xyz="0.210795342922 9.03480952275e-08 2.00773548897e-08"/>
-</joint>
-
 <joint name="head_to_jaw" type="fixed">
   <parent link="head"/>
   <child link="jaw"/>
   <origin rpy="-0.00275090709329 0.00396323204041 0.821488857269" xyz="0.0288657043129 -0.0121722621843 3.51353719452e-08"/>
-</joint>
-
-<joint name="jaw_to_jaw_end" type="fixed">
-  <parent link="jaw"/>
-  <child link="jaw_end"/>
-  <origin rpy="0.0 0.0 0.0" xyz="0.0927755013108 1.9449936417e-07 1.21718969126e-07"/>
 </joint>
 
 <joint name="head_to_eye_l" type="fixed">
@@ -604,22 +530,10 @@
   <origin rpy="-0.0032028881833 0.00320288538933 0.707099378109" xyz="0.0858740881085 -0.0817408710718 -0.0245181284845"/>
 </joint>
 
-<joint name="eye_l_to_eye_end_l" type="fixed">
-  <parent link="eye_l"/>
-  <child link="eye_end_l"/>
-  <origin rpy="0.0 0.0 0.0" xyz="0.0149999968708 -6.74081519492e-08 -5.55264314528e-08"/>
-</joint>
-
 <joint name="head_to_eye_r" type="fixed">
   <parent link="head"/>
   <child link="eye_r"/>
   <origin rpy="-0.0032028881833 0.00320288538933 0.707099378109" xyz="0.0846187099814 -0.0787527486682 0.0338412448764"/>
-</joint>
-
-<joint name="eye_r_to_eye_end_r" type="fixed">
-  <parent link="eye_r"/>
-  <child link="eye_end_r"/>
-  <origin rpy="0.0 0.0 0.0" xyz="0.0149999968708 -6.74081519492e-08 -5.55264314528e-08"/>
 </joint>
 
 <joint name="spine_03_to_clavicle_l" type="fixed">
@@ -664,12 +578,6 @@
   <origin rpy="-0.0385916009545 -0.106679156423 0.233461141586" xyz="0.0338006056845 0.000655886076856 -0.003986062482"/>
 </joint>
 
-<joint name="thumb_03_l_to_thumb_end_l" type="fixed">
-  <parent link="thumb_03_l"/>
-  <child link="thumb_end_l"/>
-  <origin rpy="0.0 -1.49011611938e-08 0.0" xyz="0.0268008112907 1.88225204312e-08 1.7818652509e-07"/>
-</joint>
-
 <joint name="hand_l_to_index_01_l" type="fixed">
   <parent link="hand_l"/>
   <child link="index_01_l"/>
@@ -688,11 +596,6 @@
   <origin rpy="-0.012737095356 -0.0498520582914 0.298511624336" xyz="0.0261531509459 0.00554897869006 0.00700049940497"/>
 </joint>
 
-<joint name="index_03_l_to_index_end_l" type="fixed">
-  <parent link="index_03_l"/>
-  <child link="index_end_l"/>
-  <origin rpy="0.0 -1.49011611938e-08 7.45058059692e-09" xyz="0.0231759250164 -3.76450381978e-09 5.11345099596e-08"/>
-</joint>
 
 <joint name="hand_l_to_middle_01_l" type="fixed">
   <parent link="hand_l"/>
@@ -710,12 +613,6 @@
   <parent link="middle_02_l"/>
   <child link="middle_03_l"/>
   <origin rpy="-0.00474977493286 -0.0898506268859 0.434124171734" xyz="0.0308474171907 0.00533369462937 0.00483720051125"/>
-</joint>
-
-<joint name="middle_03_l_to_middle_end_l" type="fixed">
-  <parent link="middle_03_l"/>
-  <child link="middle_end_l"/>
-  <origin rpy="0.0 -3.72529029846e-09 0.0" xyz="0.0255899727345 0.0 1.00386774449e-08"/>
 </joint>
 
 <joint name="hand_l_to_ring_01_l" type="fixed">
@@ -736,11 +633,6 @@
   <origin rpy="0.126038849354 0.150590196252 0.458255201578" xyz="0.0305362995714 0.00580770382658 0.00400844030082"/>
 </joint>
 
-<joint name="ring_03_l_to_ring_end_l" type="fixed">
-  <parent link="ring_03_l"/>
-  <child link="ring_end_l"/>
-  <origin rpy="0.0 2.79396772385e-09 7.45058059692e-09" xyz="0.025688957423 -1.69402678551e-08 3.51353719452e-08"/>
-</joint>
 
 <joint name="hand_l_to_pinky_01_l" type="fixed">
   <parent link="hand_l"/>
@@ -758,24 +650,6 @@
   <parent link="pinky_02_l"/>
   <child link="pinky_03_l"/>
   <origin rpy="0.0951744616032 0.0584980472922 0.342123389244" xyz="0.0243713185191 0.00191917608026 0.00376986619085"/>
-</joint>
-
-<joint name="pinky_03_l_to_pinky_end_l" type="fixed">
-  <parent link="pinky_03_l"/>
-  <child link="pinky_end_l"/>
-  <origin rpy="0.0 2.79396772385e-09 0.0" xyz="0.0228646416217 1.36776975523e-07 6.02320682219e-08"/>
-</joint>
-
-<joint name="lowerarm_l_to_lowerarm_twist_l" type="fixed">
-  <parent link="lowerarm_l"/>
-  <child link="lowerarm_twist_l"/>
-  <origin rpy="0.0746426284313 -0.000799436122179 0.00909915566444" xyz="0.129817441106 0.000328259717207 0.0182412303984"/>
-</joint>
-
-<joint name="upperarm_l_to_upperarm_twist_l" type="fixed">
-  <parent link="upperarm_l"/>
-  <child link="upperarm_twist_l"/>
-  <origin rpy="-0.00270357728004 -0.000196859240532 0.000223219394684" xyz="0.149999886751 -5.01933818953e-08 -8.03094195589e-08"/>
 </joint>
 
 <joint name="spine_03_to_clavicle_r" type="fixed">
@@ -820,12 +694,6 @@
   <origin rpy="0.0285002291203 0.0322570949793 0.0601841211319" xyz="-0.0381597802043 -0.000740799121559 0.00449988711625"/>
 </joint>
 
-<joint name="thumb_03_r_to_thumb_end_r" type="fixed">
-  <parent link="thumb_03_r"/>
-  <child link="thumb_end_r"/>
-  <origin rpy="0.0 0.0 0.0" xyz="-0.0251087564975 8.53287573932e-08 -7.52900817247e-08"/>
-</joint>
-
 <joint name="hand_r_to_index_01_r" type="fixed">
   <parent link="hand_r"/>
   <child link="index_01_r"/>
@@ -842,12 +710,6 @@
   <parent link="index_02_r"/>
   <child link="index_03_r"/>
   <origin rpy="-0.00190701941028 -0.00745415687561 0.118991464376" xyz="-0.026513857767 -0.00562454015017 -0.00709709618241"/>
-</joint>
-
-<joint name="index_03_r_to_index_end_r" type="fixed">
-  <parent link="index_03_r"/>
-  <child link="index_end_r"/>
-  <origin rpy="0.0 0.0 0.0" xyz="-0.0219139289111 5.01933818953e-08 -1.44305985827e-07"/>
 </joint>
 
 <joint name="hand_r_to_middle_01_r" type="fixed">
@@ -868,12 +730,6 @@
   <origin rpy="-0.00135524384677 -0.0256098210812 0.187287062407" xyz="-0.0314076542854 -0.00542965950444 -0.00492520071566"/>
 </joint>
 
-<joint name="middle_03_r_to_middle_end_r" type="fixed">
-  <parent link="middle_03_r"/>
-  <child link="middle_end_r"/>
-  <origin rpy="0.0 0.0 0.0" xyz="-0.0266731604934 -1.05406115836e-07 4.45466312726e-08"/>
-</joint>
-
 <joint name="hand_r_to_ring_01_r" type="fixed">
   <parent link="hand_r"/>
   <child link="ring_01_r"/>
@@ -890,12 +746,6 @@
   <parent link="ring_02_r"/>
   <child link="ring_03_r"/>
   <origin rpy="0.0240562856197 0.0287397801876 0.159290477633" xyz="-0.0316260233521 -0.00601406069472 -0.00415190402418"/>
-</joint>
-
-<joint name="ring_03_r_to_ring_end_r" type="fixed">
-  <parent link="ring_03_r"/>
-  <child link="ring_end_r"/>
-  <origin rpy="0.0 0.0 0.0" xyz="-0.0251970626414 -7.52900763956e-09 -1.27679427919e-07"/>
 </joint>
 
 <joint name="hand_r_to_pinky_01_r" type="fixed">
@@ -916,25 +766,7 @@
   <origin rpy="0.0375578030944 0.0230900347233 0.188641756773" xyz="-0.0241457615048 -0.00189881573897 -0.00373616511934"/>
 </joint>
 
-<joint name="pinky_03_r_to_pinky_end_r" type="fixed">
-  <parent link="pinky_03_r"/>
-  <child link="pinky_end_r"/>
-  <origin rpy="0.0 1.49011611938e-08 0.0" xyz="-0.0238340403885 4.26643786966e-08 9.09755257794e-08"/>
-</joint>
-
-<joint name="lowerarm_r_to_lowerarm_twist_r" type="fixed">
-  <parent link="lowerarm_r"/>
-  <child link="lowerarm_twist_r"/>
-  <origin rpy="0.0768133252859 -0.000819750130177 0.00936223566532" xyz="-0.261949628592 0.00280463066883 -0.0319310054183"/>
-</joint>
-
-<joint name="upperarm_r_to_upperarm_twist_r" type="fixed">
-  <parent link="upperarm_r"/>
-  <child link="upperarm_twist_r"/>
-  <origin rpy="-0.160621166229 -0.0117125883698 0.0132591351867" xyz="-0.139236912131 -0.0101542491466 0.0114930104464"/>
-</joint>
-
-<joint name="pelvis_to_thigh_l" type="fixed">
+<joint name="pelvis_to_thigh_l" type="continuous">
   <parent link="pelvis"/>
   <child link="thigh_l"/>
   <origin rpy="0.140670761466 -0.0486810952425 0.172580957413" xyz="-0.0145145617425 -0.00518470583484 -0.0899454131722"/>
@@ -956,24 +788,6 @@
   <parent link="foot_l"/>
   <child link="ball_l"/>
   <origin rpy="0.00174894742668 0.00172820687294 -0.702846229076" xyz="-0.124129585922 -0.143263533711 -0.00809520948678"/>
-</joint>
-
-<joint name="ball_l_to_foot_end_l" type="fixed">
-  <parent link="ball_l"/>
-  <child link="foot_end_l"/>
-  <origin rpy="0.0 0.0 0.0" xyz="0.0667766407132 1.09798037329e-09 5.23893461946e-08"/>
-</joint>
-
-<joint name="calf_l_to_calf_twist_l" type="fixed">
-  <parent link="calf_l"/>
-  <child link="calf_twist_l"/>
-  <origin rpy="0.0241432338953 8.12411308289e-05 -0.00107330083847" xyz="-0.220735520124 0.0143435029313 -0.0151363778859"/>
-</joint>
-
-<joint name="thigh_l_to_thigh_twist_l" type="fixed">
-  <parent link="thigh_l"/>
-  <child link="thigh_twist_l"/>
-  <origin rpy="-0.0338423848152 -3.13520431519e-05 0.00150185823441" xyz="-0.20844489336 0.00411380454898 -0.0257120840251"/>
 </joint>
 
 <joint name="pelvis_to_thigh_r" type="fixed">
@@ -998,66 +812,6 @@
   <parent link="foot_r"/>
   <child link="ball_r"/>
   <origin rpy="0.00124281644821 0.00121146440506 -0.697935938835" xyz="0.124294094741 0.143451243639 0.00810672342777"/>
-</joint>
-
-<joint name="ball_r_to_foot_end_r" type="fixed">
-  <parent link="ball_r"/>
-  <child link="foot_end_r"/>
-  <origin rpy="0.0 0.0 0.0" xyz="-0.064597658813 0.0 2.158315624e-07"/>
-</joint>
-
-<joint name="calf_r_to_calf_twist_r" type="fixed">
-  <parent link="calf_r"/>
-  <child link="calf_twist_r"/>
-  <origin rpy="0.051498323679 0.000987589359283 -0.00231440365314" xyz="0.22137466073 -0.0116511350498 0.0148830814287"/>
-</joint>
-
-<joint name="thigh_r_to_thigh_twist_r" type="fixed">
-  <parent link="thigh_r"/>
-  <child link="thigh_twist_r"/>
-  <origin rpy="0.0548547059298 0.000125348567963 -0.00242139399052" xyz="0.207881107926 -0.00411987304688 0.0256331600249"/>
-</joint>
-
-<joint name="root_to_ik_foot_root" type="fixed">
-  <parent link="root"/>
-  <child link="ik_foot_root"/>
-  <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0"/>
-</joint>
-
-<joint name="ik_foot_root_to_ik_foot_r" type="fixed">
-  <parent link="ik_foot_root"/>
-  <child link="ik_foot_r"/>
-  <origin rpy="3.1415885872072544 1.5707963267948966 -2.82605756568174e-06" xyz="-0.0750189200044 0.0312873832881 0.0952222421765"/>
-</joint>
-
-<joint name="ik_foot_root_to_ik_foot_l" type="fixed">
-  <parent link="ik_foot_root"/>
-  <child link="ik_foot_l"/>
-  <origin rpy="7.74146767901687e-09 -1.5705346844728312 1.548309172631797e-09" xyz="0.0753161609173 0.0312994755805 0.0896566361189"/>
-</joint>
-
-<joint name="root_to_ik_hand_root" type="fixed">
-  <parent link="root"/>
-  <child link="ik_hand_root"/>
-  <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0"/>
-</joint>
-
-<joint name="ik_hand_root_to_ik_hand_gun" type="fixed">
-  <parent link="ik_hand_root"/>
-  <child link="ik_hand_gun"/>
-  <origin rpy="1.1709448133782143 -0.6956134325355375 0.5829958934020861" xyz="-0.518494844437 -0.112890549004 1.06469941139"/>
-</joint>
-
-<joint name="ik_hand_gun_to_ik_hand_r" type="fixed">
-  <parent link="ik_hand_gun"/>
-  <child link="ik_hand_r"/>
-  <origin rpy="4.470348624613529e-08 2.9802318390797116e-08 1.7881393499233486e-07" xyz="0.0 0.0 0.0"/>
-</joint>
-
-<joint name="ik_hand_gun_to_ik_hand_l" type="fixed">
-  <parent link="ik_hand_gun"/>
-  <child link="ik_hand_l"/>
-  <origin rpy="-2.6664018571023993 -0.39306600503647476 -1.7653732954630281" xyz="0.670575678349 -0.740988910198 0.314421117306"/>
 </joint>
 
 </robot>
