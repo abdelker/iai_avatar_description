@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="avatar_pia">
 
-<link name="root">
-<visual>
-    <geometry>
-      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/feet.obj"/>
-    </geometry>
-  </visual>
-</link>
+<link name="root"/>
+
 
 <link name="pelvis">
   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/legs.obj"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/hip.obj"/>
     </geometry>
   </visual>
 </link>
@@ -20,7 +15,7 @@
 <link name="spine_01">
   <!-- visual>
     <geometry>
-      < mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/spine_01.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/spine_01.dae" scale="1 1 1"/>
     </geometry>
   </visual -->
 </link>
@@ -34,19 +29,19 @@
 </link>
 
 <link name="spine_03">
+  <visual>
+    <geometry>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/torso_nla.obj"/>
+    </geometry>
+  </visual>
+</link>
+
+<link name="spine_04">
   <!-- visual>
     <geometry>
       <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/torso.obj"/>
     </geometry>
   </visual -->
-</link>
-
-<link name="spine_04">
-  <visual>
-    <geometry>
-      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/torso.obj"/>
-    </geometry>
-  </visual>
 </link>
 
 <link name="spine_05">
@@ -110,19 +105,19 @@
 
 
 <link name="upperarm_l">
- <!-- visual>
+  <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes_simple/arm_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/upperarm_l.obj"/>
     </geometry>
-  </visual -->
+  </visual>
 </link>
 
 <link name="lowerarm_l">
-  <!-- visual>
+   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/lowerarm_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/lowerarm_l.obj"/>
     </geometry>
-  </visual -->
+  </visual>
 </link>
 
 <link name="hand_l">
@@ -257,19 +252,19 @@
 
 
 <link name="upperarm_r">
-  <!-- visual>
+  <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes_simple/arm_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/upperarm_r.obj"/>
     </geometry>
-  </visual -->
+  </visual>
 </link>
 
 <link name="lowerarm_r">
-  <!-- visual>
+   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/lowerarm_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/lowerarm_r.obj"/>
     </geometry>
-  </visual -->
+  </visual>
 </link>
 
 <link name="hand_r">
@@ -401,27 +396,27 @@
 </link>
 
 <link name="thigh_l">
-  <!-- visual>
+   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes_simple/leg_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/thigh_l.obj"/>
     </geometry>
-  </visual -->
+  </visual>
 </link>
 
 <link name="calf_l">
-  <!-- visual>
+   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/calf_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/calf_l.obj"/>
     </geometry>
-  </visual -->
+  </visual>
 </link>
 
 <link name="foot_l">
-  <!-- visual>
+   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/foot_l.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/foot_l.obj"/>
     </geometry>
-  </visual -->
+  </visual>
 </link>
 
 <link name="ball_l">
@@ -433,27 +428,27 @@
 </link>
 
 <link name="thigh_r">
-  <!-- visual>
+   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes_simple/leg_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/thigh_r.obj"/>
     </geometry>
-  </visual -->
+  </visual>
 </link>
 
 <link name="calf_r">
-  <!-- visual>
+  <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/calf_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/calf_r.obj"/>
     </geometry>
-  </visual -->
+  </visual>
 </link>
 
 <link name="foot_r">
-  <!-- visual>
+   <visual>
     <geometry>
-      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/foot_r.dae" scale="1 1 1"/>
+      <mesh filename="package://iai_avatar_description/MetaHuman/pia/meshes/foot_r.obj"/>
     </geometry>
-  </visual -->
+  </visual>
 </link>
 
 <link name="ball_r">
@@ -766,7 +761,7 @@
   <origin rpy="0.0375578030944 0.0230900347233 0.188641756773" xyz="-0.0241457615048 -0.00189881573897 -0.00373616511934"/>
 </joint>
 
-<joint name="pelvis_to_thigh_l" type="continuous">
+<joint name="pelvis_to_thigh_l" type="fixed">
   <parent link="pelvis"/>
   <child link="thigh_l"/>
   <origin rpy="0.140670761466 -0.0486810952425 0.172580957413" xyz="-0.0145145617425 -0.00518470583484 -0.0899454131722"/>
